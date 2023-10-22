@@ -18,8 +18,9 @@ cd tgs4
 
 ```bash
 sqlalchemy.url = mysql+pymysql://root:@localhost:3306/tugasindividu4
-
 ```
+ the database file is in the repository
+
 
 4. install dependencies
 
