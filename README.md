@@ -11,13 +11,14 @@ git clone
 2. change directory to this repo
 
 ```bash
-cd pwl4
+cd tgs4
 ```
 
 3.  change development.ini url to your database url
 
 ```bash
-sqlalchemy.url = mysql+pymysql://username:password@localhost:5432/dbname
+sqlalchemy.url = mysql+pymysql://root:@localhost:3306/tugasindividu4
+
 ```
 
 4. install dependencies
@@ -57,4 +58,22 @@ pserve development.ini --reload
 | /movies/{id} | GET    | get movie by id    |
 | /movies/{id} | PUT    | update movie by id |
 | /movies/{id} | DELETE | delete movie by id |
+contoh test POST /register
+```bash
+{
+    "email": "contoh@email.com",
+    "password": "password_anda"
+}
+```
+contoh test POST /movies
+localhost:root
+```bash
+{
+    "title": "Laskar Pelangi",
+    "description": "Kisah perjuangan sekelompok anak-anak di Belitung Timur yang berusaha mendapatkan pendidikan yang berkualitas meskipun dihadapkan dengan keterbatasan sumber daya.",
+    "year": 2008,
+    "director": "Riri Riza",
+    "genre": "Horror"
+}
 
+```
